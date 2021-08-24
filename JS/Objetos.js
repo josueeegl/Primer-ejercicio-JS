@@ -38,34 +38,24 @@ const {
 
 //template string
 function mostrar_DW (){
-const contenedor1 = document.querySelector('#DesarrolloWeb');
-let html = `<ul>
-                <li>
-                <h1>Desarrollo Web</h1>
-                </li>
-                <li>
-                Nombre: ${Desarrollo_Web.Estudiantes[0].Nombre} Nota: ${Desarrollo_Web.Estudiantes[0].Nota}
-                </li>
-                <li>
-                Nombre: ${Desarrollo_Web.Estudiantes[1].Nombre} Nota: ${Desarrollo_Web.Estudiantes[1].Nota}
-                </li>
-                <li>
-                Nombre: ${Desarrollo_Web.Estudiantes[2].Nombre} Nota: ${Desarrollo_Web.Estudiantes[2].Nota}
-                </li>
-                <li>
-                Nombre: ${Desarrollo_Web.Estudiantes[3].Nombre} Nota: ${Desarrollo_Web.Estudiantes[3].Nota}
-                </li>
-            </ul>`;
-contenedor1.innerHTML = html;
+const contenedor = document.querySelector('#DesarrolloWeb');
+let html = '';
+    for(let i = 0; i < 4; i++){
+        html += `<li>
+        Nombre: ${Desarrollo_Web.Estudiantes[i].Nombre} Nota: ${Desarrollo_Web.Estudiantes[i].Nota}
+        </li>`
+    }
+    let html1 = `<ul><li><h1>Desarrollo Web</h1></li>${html}</ul>`;
+contenedor.innerHTML = html1;
 }
 function mostrar_programacion (){
-    const contenedor1 = document.querySelector('#programacion');
-    let html;
+    const contenedor = document.querySelector('#programacion');
+    let html = '';
     for(let i = 0; i < 4; i++){
         html += `<li>
         Nombre: ${Programacion_2.Estudiantes[i].Nombre} Nota: ${Programacion_2.Estudiantes[i].Nota}
         </li>`
     }
     let html1 = `<ul><li><h1>Programación 2</h1></li>${html}</ul>`;
-    contenedor1.innerHTML = html1;
+    contenedor.innerHTML = html1;
     }

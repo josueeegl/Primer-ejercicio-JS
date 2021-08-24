@@ -1,4 +1,4 @@
-document.getElementById("boton").onclick = function () {
+document.getElementById("boton").onclick =  () => {
     var valor = document.getElementById("numero").value;
     suma(valor);
     multi(valor);

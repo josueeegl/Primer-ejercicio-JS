@@ -3,7 +3,7 @@ body {
 }
 
 div h1 {
-  margin: 5px;
+  margin: 1px;
   color: #2a8a6d;
 }
 
@@ -13,7 +13,7 @@ div ul {
 }
 
 div li {
-  padding: 5px;
+  padding: 2px;
 }
 
 .cursos {
@@ -83,12 +83,17 @@ table td {
   font-size: 15px;
   background-color: #477a7a;
   border: solid 1px #ddd;
-  padding: 5px;
+  padding: 2px;
 }
 
 #multi, #division, #resta, #suma {
   width: 300px;
-  margin: auto;
-  position: relative;
   top: 10px;
+  margin: 10px;
+  position: relative;
+}
+.tab{
+    position: relative;
+    display: inline-flex;
+    
 }

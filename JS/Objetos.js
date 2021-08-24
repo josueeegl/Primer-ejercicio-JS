@@ -42,7 +42,7 @@ const contenedor = document.querySelector('#DesarrolloWeb');
 let html = '';
     for(let i = 0; i < 4; i++){
         html += `<li>
-        Nombre: ${Desarrollo_Web.Estudiantes[i].Nombre} Nota: ${Desarrollo_Web.Estudiantes[i].Nota}
+        Nombre: ${Desarrollo_Web.Estudiantes[i].Nombre} - Nota: ${Desarrollo_Web.Estudiantes[i].Nota}
         </li>`
     }
     let html1 = `<ul><li><h1>Desarrollo Web</h1></li>${html}</ul>`;
@@ -53,7 +53,7 @@ function mostrar_programacion (){
     let html = '';
     for(let i = 0; i < 4; i++){
         html += `<li>
-        Nombre: ${Programacion_2.Estudiantes[i].Nombre} Nota: ${Programacion_2.Estudiantes[i].Nota}
+        Nombre: ${Programacion_2.Estudiantes[i].Nombre} - Nota: ${Programacion_2.Estudiantes[i].Nota}
         </li>`
     }
     let html1 = `<ul><li><h1>Programación 2</h1></li>${html}</ul>`;

@@ -45,7 +45,7 @@ var divi = (valor) => {
                 <td>/</td>
                 <td>${i}</td>
                 <td>=</td>
-                <td>${parseFloat(valor)/i}</td>
+                <td>${(parseFloat(valor)/i).toFixed(2)}</td>
                 </tr>`;
     }
     let html1 = `<table>${html}</table>`;
